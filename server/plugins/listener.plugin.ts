@@ -7,6 +7,8 @@ export const ListenerPlugin = {
   listen(app: Express) {
     KafkaController();
 
+    console.log("test");
+
     app.listen(configs.PORT, () => {
       console.log(`\nServer is running on port ${configs.PORT}\n`);
     });
